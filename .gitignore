@@ -1,0 +1,30 @@
+# Python bytecode and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local secrets (never commit API keys)
+.env
+.env.*
+!.env.example
+
+# Local editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated run outputs (sample reports already committed intentionally)
+# Uncomment these if you do not want to track newly generated reports:
+# mission_traces_and_report.json
+# multi_agent_report.json
+# planner_benchmark.json
+# planner_benchmark_llm.json
