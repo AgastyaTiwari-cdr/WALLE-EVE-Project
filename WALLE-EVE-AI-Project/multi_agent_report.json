@@ -1,0 +1,1284 @@
+{
+  "mission_id": "MISSION-SECTOR-7A",
+  "mode": "cooperative_multi_agent",
+  "agent_count": 2,
+  "status": "SUCCESS",
+  "termination_reason": "EVE_FOUND",
+  "found_by_agent": 2,
+  "total_team_actions": 62,
+  "positions": [
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "batteries": [
+    34,
+    30
+  ],
+  "inferred_location": [
+    7,
+    8
+  ],
+  "posterior_confidence": 1.0,
+  "evidence_log": [
+    {
+      "position": [
+        6,
+        6
+      ],
+      "type": "COMM_PING",
+      "directional_bias": [
+        0,
+        1
+      ],
+      "message": "Localized communication ping detected nearby."
+    }
+  ],
+  "action_traces": [
+    {
+      "step": 1,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        0,
+        0
+      ],
+      "position": [
+        1,
+        0
+      ],
+      "battery_remaining": 96,
+      "signal_strength": 3.433,
+      "inferred_location": [
+        5,
+        0
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((1, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 2,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        9,
+        0
+      ],
+      "position": [
+        8,
+        0
+      ],
+      "battery_remaining": 96,
+      "signal_strength": 5.743,
+      "inferred_location": [
+        5,
+        0
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((8, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 3,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        1,
+        0
+      ],
+      "position": [
+        2,
+        0
+      ],
+      "battery_remaining": 92,
+      "signal_strength": 2.218,
+      "inferred_location": [
+        6,
+        2
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((2, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 4,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        8,
+        0
+      ],
+      "position": [
+        7,
+        0
+      ],
+      "battery_remaining": 92,
+      "signal_strength": 4.486,
+      "inferred_location": [
+        6,
+        3
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((7, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 5,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        2,
+        0
+      ],
+      "position": [
+        3,
+        0
+      ],
+      "battery_remaining": 88,
+      "signal_strength": 3.487,
+      "inferred_location": [
+        6,
+        3
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((3, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 6,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        7,
+        0
+      ],
+      "position": [
+        6,
+        0
+      ],
+      "battery_remaining": 88,
+      "signal_strength": 3.677,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((6, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 7,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        3,
+        0
+      ],
+      "position": [
+        4,
+        0
+      ],
+      "battery_remaining": 84,
+      "signal_strength": 0.235,
+      "inferred_location": [
+        9,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 8,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        6,
+        0
+      ],
+      "position": [
+        5,
+        0
+      ],
+      "battery_remaining": 84,
+      "signal_strength": 6.461,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((5, 0)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 9,
+      "agent_id": 1,
+      "action": "MOVE_NORTH",
+      "from": [
+        4,
+        0
+      ],
+      "position": [
+        4,
+        1
+      ],
+      "battery_remaining": 80,
+      "signal_strength": 4.62,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 1)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 10,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        5,
+        0
+      ],
+      "position": [
+        5,
+        1
+      ],
+      "battery_remaining": 80,
+      "signal_strength": 4.63,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((5, 1)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 11,
+      "agent_id": 1,
+      "action": "MOVE_NORTH",
+      "from": [
+        4,
+        1
+      ],
+      "position": [
+        4,
+        2
+      ],
+      "battery_remaining": 76,
+      "signal_strength": 3.814,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 2)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 12,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        5,
+        1
+      ],
+      "position": [
+        5,
+        2
+      ],
+      "battery_remaining": 76,
+      "signal_strength": 6.288,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((5, 2)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 13,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        4,
+        2
+      ],
+      "position": [
+        5,
+        2
+      ],
+      "battery_remaining": 72,
+      "signal_strength": 6.534,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Information-seeking route to (7, 4): P(EVE at cell)=72.7%, novelty=1.00, information_proxy=0.990, travel=5; adapt target after the next observation."
+    },
+    {
+      "step": 14,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        2
+      ],
+      "position": [
+        6,
+        2
+      ],
+      "battery_remaining": 72,
+      "signal_strength": 6.858,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Information-seeking route to (7, 4): P(EVE at cell)=87.6%, novelty=1.00, information_proxy=0.985, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 15,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        2
+      ],
+      "position": [
+        6,
+        2
+      ],
+      "battery_remaining": 68,
+      "signal_strength": 5.932,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "reasoning": "Information-seeking route to (7, 4): P(EVE at cell)=73.0%, novelty=1.00, information_proxy=0.979, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 16,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        6,
+        2
+      ],
+      "position": [
+        6,
+        3
+      ],
+      "battery_remaining": 68,
+      "signal_strength": 5.388,
+      "inferred_location": [
+        8,
+        4
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((6, 3)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 17,
+      "agent_id": 1,
+      "action": "MOVE_NORTH",
+      "from": [
+        6,
+        2
+      ],
+      "position": [
+        6,
+        3
+      ],
+      "battery_remaining": 64,
+      "signal_strength": 5.461,
+      "inferred_location": [
+        6,
+        5
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((6, 3)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 18,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        6,
+        3
+      ],
+      "position": [
+        6,
+        4
+      ],
+      "battery_remaining": 64,
+      "signal_strength": 11.158,
+      "inferred_location": [
+        5,
+        5
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((6, 4)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 19,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        6,
+        3
+      ],
+      "position": [
+        5,
+        3
+      ],
+      "battery_remaining": 60,
+      "signal_strength": 6.654,
+      "inferred_location": [
+        4,
+        5
+      ],
+      "reasoning": "Information-seeking route to (4, 5): P(EVE at cell)=72.5%, novelty=1.00, information_proxy=0.815, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 20,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        6,
+        4
+      ],
+      "position": [
+        5,
+        4
+      ],
+      "battery_remaining": 60,
+      "signal_strength": 7.719,
+      "inferred_location": [
+        9,
+        3
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((5, 4)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 21,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        3
+      ],
+      "position": [
+        6,
+        3
+      ],
+      "battery_remaining": 56,
+      "signal_strength": 6.423,
+      "inferred_location": [
+        9,
+        3
+      ],
+      "reasoning": "Information-seeking route to (9, 3): P(EVE at cell)=82.4%, novelty=1.00, information_proxy=0.958, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 22,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        5,
+        4
+      ],
+      "position": [
+        5,
+        5
+      ],
+      "battery_remaining": 56,
+      "signal_strength": 9.848,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((5, 5)) before committing to a noisy early estimate."
+    },
+    {
+      "step": 23,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        6,
+        3
+      ],
+      "position": [
+        7,
+        3
+      ],
+      "battery_remaining": 52,
+      "signal_strength": 8.676,
+      "inferred_location": [
+        8,
+        5
+      ],
+      "reasoning": "Information-seeking route to (8, 5): P(EVE at cell)=60.5%, novelty=1.00, information_proxy=0.668, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 24,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        5
+      ],
+      "position": [
+        6,
+        5
+      ],
+      "battery_remaining": 52,
+      "signal_strength": 7.789,
+      "inferred_location": [
+        8,
+        5
+      ],
+      "reasoning": "Information-seeking route to (8, 5): P(EVE at cell)=94.8%, novelty=1.00, information_proxy=0.981, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 25,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        7,
+        3
+      ],
+      "position": [
+        8,
+        3
+      ],
+      "battery_remaining": 48,
+      "signal_strength": 11.012,
+      "inferred_location": [
+        8,
+        5
+      ],
+      "reasoning": "Information-seeking route to (8, 5): P(EVE at cell)=98.9%, novelty=1.00, information_proxy=0.977, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 26,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        6,
+        5
+      ],
+      "position": [
+        7,
+        5
+      ],
+      "battery_remaining": 48,
+      "signal_strength": 9.163,
+      "inferred_location": [
+        8,
+        5
+      ],
+      "reasoning": "Information-seeking route to (8, 5): P(EVE at cell)=89.4%, novelty=1.00, information_proxy=0.985, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 27,
+      "agent_id": 1,
+      "action": "MOVE_NORTH",
+      "from": [
+        8,
+        3
+      ],
+      "position": [
+        8,
+        4
+      ],
+      "battery_remaining": 44,
+      "signal_strength": 8.62,
+      "inferred_location": [
+        8,
+        5
+      ],
+      "reasoning": "Information-seeking route to (8, 5): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.017, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 28,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        7,
+        5
+      ],
+      "position": [
+        8,
+        5
+      ],
+      "battery_remaining": 44,
+      "signal_strength": 9.922,
+      "inferred_location": [
+        9,
+        5
+      ],
+      "reasoning": "Information-seeking route to (9, 5): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.584, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 29,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        8,
+        4
+      ],
+      "position": [
+        7,
+        4
+      ],
+      "battery_remaining": 40,
+      "signal_strength": 7.792,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Information-seeking route to (3, 5): P(EVE at cell)=98.4%, novelty=1.00, information_proxy=0.983, travel=6; adapt target after the next observation."
+    },
+    {
+      "step": 30,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        8,
+        5
+      ],
+      "position": [
+        7,
+        5
+      ],
+      "battery_remaining": 40,
+      "signal_strength": 10.482,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Information-seeking route to (7, 7): P(EVE at cell)=68.9%, novelty=1.00, information_proxy=0.984, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 31,
+      "agent_id": 1,
+      "action": "MOVE_NORTH",
+      "from": [
+        7,
+        4
+      ],
+      "position": [
+        7,
+        5
+      ],
+      "battery_remaining": 36,
+      "signal_strength": 10.03,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Information-seeking route to (7, 7): P(EVE at cell)=82.6%, novelty=1.00, information_proxy=0.998, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 32,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        7,
+        5
+      ],
+      "position": [
+        6,
+        5
+      ],
+      "battery_remaining": 36,
+      "signal_strength": 7.849,
+      "inferred_location": [
+        6,
+        7
+      ],
+      "reasoning": "Information-seeking route to (6, 7): P(EVE at cell)=90.1%, novelty=1.00, information_proxy=0.996, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 33,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        7,
+        5
+      ],
+      "position": [
+        6,
+        5
+      ],
+      "battery_remaining": 32,
+      "signal_strength": 12.523,
+      "inferred_location": [
+        6,
+        7
+      ],
+      "reasoning": "Information-seeking route to (6, 7): P(EVE at cell)=89.3%, novelty=1.00, information_proxy=0.997, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 34,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        6,
+        5
+      ],
+      "position": [
+        7,
+        5
+      ],
+      "battery_remaining": 32,
+      "signal_strength": 6.774,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Information-seeking route to (7, 7): P(EVE at cell)=91.0%, novelty=1.00, information_proxy=0.997, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 35,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        6,
+        5
+      ],
+      "position": [
+        7,
+        5
+      ],
+      "battery_remaining": 28,
+      "signal_strength": 7.292,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Information-seeking route to (7, 7): P(EVE at cell)=54.2%, novelty=1.00, information_proxy=0.999, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 36,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        7,
+        5
+      ],
+      "position": [
+        6,
+        5
+      ],
+      "battery_remaining": 28,
+      "signal_strength": 0.0,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Information-seeking route to (3, 5): P(EVE at cell)=98.9%, novelty=1.00, information_proxy=0.974, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 37,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        7,
+        5
+      ],
+      "position": [
+        6,
+        5
+      ],
+      "battery_remaining": 24,
+      "signal_strength": 9.894,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Information-seeking route to (3, 5): P(EVE at cell)=99.3%, novelty=1.00, information_proxy=0.965, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 38,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        6,
+        5
+      ],
+      "position": [
+        5,
+        5
+      ],
+      "battery_remaining": 24,
+      "signal_strength": 11.482,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Information-seeking route to (3, 5): P(EVE at cell)=96.2%, novelty=1.00, information_proxy=0.960, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 39,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        6,
+        5
+      ],
+      "position": [
+        5,
+        5
+      ],
+      "battery_remaining": 20,
+      "signal_strength": 8.617,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Information-seeking route to (3, 5): P(EVE at cell)=99.0%, novelty=1.00, information_proxy=0.972, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 40,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        5,
+        5
+      ],
+      "position": [
+        4,
+        5
+      ],
+      "battery_remaining": 20,
+      "signal_strength": 10.475,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Information-seeking route to (3, 5): P(EVE at cell)=98.5%, novelty=1.00, information_proxy=0.978, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 41,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        5,
+        5
+      ],
+      "position": [
+        4,
+        5
+      ],
+      "battery_remaining": 16,
+      "signal_strength": 6.828,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "reasoning": "Information-seeking route to (3, 5): P(EVE at cell)=54.8%, novelty=1.00, information_proxy=0.966, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 42,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        4,
+        5
+      ],
+      "position": [
+        5,
+        5
+      ],
+      "battery_remaining": 16,
+      "signal_strength": 9.344,
+      "inferred_location": [
+        5,
+        7
+      ],
+      "reasoning": "Information-seeking route to (5, 7): P(EVE at cell)=96.9%, novelty=1.00, information_proxy=0.964, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 43,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        4,
+        5
+      ],
+      "position": [
+        5,
+        5
+      ],
+      "battery_remaining": 12,
+      "signal_strength": 8.939,
+      "inferred_location": [
+        5,
+        7
+      ],
+      "reasoning": "Information-seeking route to (5, 7): P(EVE at cell)=99.6%, novelty=1.00, information_proxy=0.945, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 44,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        5,
+        5
+      ],
+      "position": [
+        5,
+        6
+      ],
+      "battery_remaining": 12,
+      "signal_strength": 9.352,
+      "inferred_location": [
+        5,
+        7
+      ],
+      "reasoning": "Information-seeking route to (5, 7): P(EVE at cell)=95.1%, novelty=1.00, information_proxy=0.990, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 45,
+      "agent_id": 1,
+      "action": "RECHARGE",
+      "from": [
+        5,
+        5
+      ],
+      "position": [
+        5,
+        5
+      ],
+      "battery_remaining": 37,
+      "signal_strength": 12.061,
+      "inferred_location": [
+        5,
+        7
+      ],
+      "reasoning": "Reserve policy: battery=12; recharge before committing to another route."
+    },
+    {
+      "step": 46,
+      "agent_id": 2,
+      "action": "RECHARGE",
+      "from": [
+        5,
+        6
+      ],
+      "position": [
+        5,
+        6
+      ],
+      "battery_remaining": 37,
+      "signal_strength": 9.477,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Reserve policy: battery=12; recharge before committing to another route."
+    },
+    {
+      "step": 47,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        5
+      ],
+      "position": [
+        6,
+        5
+      ],
+      "battery_remaining": 33,
+      "signal_strength": 7.809,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Information-seeking route to (7, 7): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.397, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 48,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        6
+      ],
+      "position": [
+        6,
+        6
+      ],
+      "battery_remaining": 33,
+      "signal_strength": 12.874,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Information-seeking route to (7, 7): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.058, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 49,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        6,
+        5
+      ],
+      "position": [
+        7,
+        5
+      ],
+      "battery_remaining": 29,
+      "signal_strength": 5.437,
+      "inferred_location": [
+        7,
+        7
+      ],
+      "reasoning": "Information-seeking route to (7, 7): P(EVE at cell)=98.3%, novelty=1.00, information_proxy=0.986, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 50,
+      "agent_id": 2,
+      "action": "SCAN",
+      "from": [
+        6,
+        6
+      ],
+      "position": [
+        6,
+        6
+      ],
+      "battery_remaining": 25,
+      "signal_strength": 12.566,
+      "inferred_location": [
+        6,
+        8
+      ],
+      "reasoning": "Evidence collection: scanning newly discovered COMM_PING at (6, 6) for a higher-quality reading."
+    },
+    {
+      "step": 51,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        7,
+        5
+      ],
+      "position": [
+        6,
+        5
+      ],
+      "battery_remaining": 25,
+      "signal_strength": 9.148,
+      "inferred_location": [
+        6,
+        8
+      ],
+      "reasoning": "Information-seeking route to (6, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=4; adapt target after the next observation."
+    },
+    {
+      "step": 52,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        6,
+        6
+      ],
+      "position": [
+        6,
+        7
+      ],
+      "battery_remaining": 21,
+      "signal_strength": 9.12,
+      "inferred_location": [
+        6,
+        8
+      ],
+      "reasoning": "Information-seeking route to (6, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 53,
+      "agent_id": 1,
+      "action": "MOVE_NORTH",
+      "from": [
+        6,
+        5
+      ],
+      "position": [
+        6,
+        6
+      ],
+      "battery_remaining": 21,
+      "signal_strength": 8.553,
+      "inferred_location": [
+        6,
+        8
+      ],
+      "reasoning": "Information-seeking route to (6, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 54,
+      "agent_id": 2,
+      "action": "MOVE_NORTH",
+      "from": [
+        6,
+        7
+      ],
+      "position": [
+        6,
+        8
+      ],
+      "battery_remaining": 17,
+      "signal_strength": 23.19,
+      "inferred_location": [
+        6,
+        8
+      ],
+      "reasoning": "Information-seeking route to (6, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=1; adapt target after the next observation."
+    },
+    {
+      "step": 55,
+      "agent_id": 1,
+      "action": "MOVE_NORTH",
+      "from": [
+        6,
+        6
+      ],
+      "position": [
+        6,
+        7
+      ],
+      "battery_remaining": 17,
+      "signal_strength": 15.449,
+      "inferred_location": [
+        6,
+        8
+      ],
+      "reasoning": "Information-seeking route to (6, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 56,
+      "agent_id": 2,
+      "action": "MOVE_WEST",
+      "from": [
+        6,
+        8
+      ],
+      "position": [
+        5,
+        8
+      ],
+      "battery_remaining": 13,
+      "signal_strength": 32.648,
+      "inferred_location": [
+        5,
+        8
+      ],
+      "reasoning": "Information-seeking route to (5, 8): P(EVE at cell)=99.7%, novelty=1.00, information_proxy=0.932, travel=1; adapt target after the next observation."
+    },
+    {
+      "step": 57,
+      "agent_id": 1,
+      "action": "MOVE_WEST",
+      "from": [
+        6,
+        7
+      ],
+      "position": [
+        5,
+        7
+      ],
+      "battery_remaining": 13,
+      "signal_strength": 17.882,
+      "inferred_location": [
+        5,
+        8
+      ],
+      "reasoning": "Information-seeking route to (5, 8): P(EVE at cell)=99.7%, novelty=1.00, information_proxy=0.932, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 58,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        8
+      ],
+      "position": [
+        6,
+        8
+      ],
+      "battery_remaining": 9,
+      "signal_strength": 14.654,
+      "inferred_location": [
+        7,
+        8
+      ],
+      "reasoning": "Information-seeking route to (7, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=2; adapt target after the next observation."
+    },
+    {
+      "step": 59,
+      "agent_id": 1,
+      "action": "MOVE_EAST",
+      "from": [
+        5,
+        7
+      ],
+      "position": [
+        6,
+        7
+      ],
+      "battery_remaining": 9,
+      "signal_strength": 14.017,
+      "inferred_location": [
+        7,
+        8
+      ],
+      "reasoning": "Information-seeking route to (7, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=3; adapt target after the next observation."
+    },
+    {
+      "step": 60,
+      "agent_id": 2,
+      "action": "RECHARGE",
+      "from": [
+        6,
+        8
+      ],
+      "position": [
+        6,
+        8
+      ],
+      "battery_remaining": 34,
+      "signal_strength": 32.152,
+      "inferred_location": [
+        7,
+        8
+      ],
+      "reasoning": "Reserve policy: battery=9; recharge before committing to another route."
+    },
+    {
+      "step": 61,
+      "agent_id": 1,
+      "action": "RECHARGE",
+      "from": [
+        6,
+        7
+      ],
+      "position": [
+        6,
+        7
+      ],
+      "battery_remaining": 34,
+      "signal_strength": 26.024,
+      "inferred_location": [
+        7,
+        8
+      ],
+      "reasoning": "Reserve policy: battery=9; recharge before committing to another route."
+    },
+    {
+      "step": 62,
+      "agent_id": 2,
+      "action": "MOVE_EAST",
+      "from": [
+        6,
+        8
+      ],
+      "position": [
+        7,
+        8
+      ],
+      "battery_remaining": 30,
+      "signal_strength": 29.29,
+      "inferred_location": [
+        7,
+        8
+      ],
+      "reasoning": "Information-seeking route to (7, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=1; adapt target after the next observation."
+    }
+  ]
+}

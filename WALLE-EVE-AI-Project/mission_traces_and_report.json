@@ -1,0 +1,677 @@
+{
+  "config": {
+    "mission_id": "MISSION-SECTOR-7A",
+    "random_seed": 7,
+    "initial_signal_reading": {
+      "position": [
+        0,
+        0
+      ],
+      "direction": [
+        1,
+        1
+      ],
+      "strength": 1.2,
+      "timestamp": 0
+    },
+    "environment": {
+      "grid_shape": [
+        10,
+        10
+      ],
+      "true_eve_position": [
+        7,
+        8
+      ],
+      "signal_decay_factor": 120.0,
+      "sensor_noise_sigma": 1.5,
+      "sensor_model": {
+        "dropout_probability": 0.02,
+        "outlier_probability": 0.04,
+        "outlier_scale": 3.0,
+        "bias": 0.0
+      }
+    },
+    "agent_initial_state": {
+      "start_position": [
+        0,
+        0
+      ],
+      "battery_capacity": 100,
+      "max_step_budget": 50
+    },
+    "action_costs": {
+      "MOVE": 4,
+      "SCAN": 8,
+      "RECHARGE": 25
+    },
+    "clues": [
+      {
+        "position": [
+          3,
+          3
+        ],
+        "type": "ION_TRAIL",
+        "directional_bias": [
+          1,
+          1
+        ],
+        "message": "High-density energy ion vector pointing Northeast."
+      },
+      {
+        "position": [
+          6,
+          6
+        ],
+        "type": "COMM_PING",
+        "directional_bias": [
+          0,
+          1
+        ],
+        "message": "Localized communication ping detected nearby."
+      }
+    ],
+    "decoys": [
+      {
+        "position": [
+          3,
+          3
+        ],
+        "signal_decay_factor": 28.0,
+        "label": "SPOOFED_SIGNAL_ALPHA"
+      },
+      {
+        "position": [
+          8,
+          2
+        ],
+        "signal_decay_factor": 22.0,
+        "label": "SPOOFED_SIGNAL_BETA"
+      }
+    ]
+  },
+  "action_traces": [
+    {
+      "step": 1,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        0,
+        0
+      ],
+      "battery_remaining": 100,
+      "signal_strength": 1.2,
+      "belief_entropy": 6.2643,
+      "inferred_location": [
+        9,
+        1
+      ],
+      "posterior_confidence": 0.0153,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((1, 0)) before committing to a noisy early estimate.",
+      "timestamp": 0,
+      "signal_direction": [
+        1,
+        1
+      ]
+    },
+    {
+      "step": 2,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        1,
+        0
+      ],
+      "battery_remaining": 96,
+      "signal_strength": 3.902,
+      "belief_entropy": 6.1721,
+      "inferred_location": [
+        6,
+        1
+      ],
+      "posterior_confidence": 0.0274,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((2, 0)) before committing to a noisy early estimate.",
+      "timestamp": 1,
+      "signal_direction": null
+    },
+    {
+      "step": 3,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        2,
+        0
+      ],
+      "battery_remaining": 92,
+      "signal_strength": 4.896,
+      "belief_entropy": 5.2868,
+      "inferred_location": [
+        6,
+        1
+      ],
+      "posterior_confidence": 0.0745,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((3, 0)) before committing to a noisy early estimate.",
+      "timestamp": 2,
+      "signal_direction": null
+    },
+    {
+      "step": 4,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        3,
+        0
+      ],
+      "battery_remaining": 88,
+      "signal_strength": 3.089,
+      "belief_entropy": 5.2741,
+      "inferred_location": [
+        4,
+        4
+      ],
+      "posterior_confidence": 0.0608,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 0)) before committing to a noisy early estimate.",
+      "timestamp": 3,
+      "signal_direction": null
+    },
+    {
+      "step": 5,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        4,
+        0
+      ],
+      "battery_remaining": 84,
+      "signal_strength": 3.649,
+      "belief_entropy": 4.9524,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "posterior_confidence": 0.0841,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 1)) before committing to a noisy early estimate.",
+      "timestamp": 4,
+      "signal_direction": null
+    },
+    {
+      "step": 6,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        4,
+        1
+      ],
+      "battery_remaining": 80,
+      "signal_strength": 5.487,
+      "belief_entropy": 4.4589,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "posterior_confidence": 0.1142,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 2)) before committing to a noisy early estimate.",
+      "timestamp": 5,
+      "signal_direction": null
+    },
+    {
+      "step": 7,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        4,
+        2
+      ],
+      "battery_remaining": 76,
+      "signal_strength": 7.021,
+      "belief_entropy": 3.602,
+      "inferred_location": [
+        3,
+        5
+      ],
+      "posterior_confidence": 0.1957,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 3)) before committing to a noisy early estimate.",
+      "timestamp": 6,
+      "signal_direction": null
+    },
+    {
+      "step": 8,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        4,
+        3
+      ],
+      "battery_remaining": 72,
+      "signal_strength": 7.142,
+      "belief_entropy": 3.0811,
+      "inferred_location": [
+        7,
+        3
+      ],
+      "posterior_confidence": 0.3116,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((4, 4)) before committing to a noisy early estimate.",
+      "timestamp": 7,
+      "signal_direction": null
+    },
+    {
+      "step": 9,
+      "action": "MOVE_WEST",
+      "agent_pos": [
+        4,
+        4
+      ],
+      "battery_remaining": 68,
+      "signal_strength": 11.352,
+      "belief_entropy": 1.6454,
+      "inferred_location": [
+        2,
+        5
+      ],
+      "posterior_confidence": 0.6719,
+      "reasoning": "Information-seeking route to (2, 5): P(EVE at cell)=67.2%, novelty=1.00, information_proxy=0.741, travel=3; adapt target after the next observation.",
+      "timestamp": 8,
+      "signal_direction": null
+    },
+    {
+      "step": 10,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        3,
+        4
+      ],
+      "battery_remaining": 64,
+      "signal_strength": 11.199,
+      "belief_entropy": 2.0166,
+      "inferred_location": [
+        4,
+        6
+      ],
+      "posterior_confidence": 0.4305,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((3, 5)) before committing to a noisy early estimate.",
+      "timestamp": 9,
+      "signal_direction": null
+    },
+    {
+      "step": 11,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        3,
+        5
+      ],
+      "battery_remaining": 60,
+      "signal_strength": 7.785,
+      "belief_entropy": 0.9128,
+      "inferred_location": [
+        6,
+        5
+      ],
+      "posterior_confidence": 0.8326,
+      "reasoning": "Information-seeking route to (6, 5): P(EVE at cell)=83.3%, novelty=1.00, information_proxy=0.955, travel=3; adapt target after the next observation.",
+      "timestamp": 10,
+      "signal_direction": null
+    },
+    {
+      "step": 12,
+      "action": "MOVE_WEST",
+      "agent_pos": [
+        4,
+        5
+      ],
+      "battery_remaining": 56,
+      "signal_strength": 6.337,
+      "belief_entropy": 0.1295,
+      "inferred_location": [
+        1,
+        4
+      ],
+      "posterior_confidence": 0.9866,
+      "reasoning": "Information-seeking route to (1, 4): P(EVE at cell)=98.7%, novelty=1.00, information_proxy=0.978, travel=4; adapt target after the next observation.",
+      "timestamp": 11,
+      "signal_direction": null
+    },
+    {
+      "step": 13,
+      "action": "MOVE_WEST",
+      "agent_pos": [
+        3,
+        5
+      ],
+      "battery_remaining": 52,
+      "signal_strength": 8.274,
+      "belief_entropy": 0.3889,
+      "inferred_location": [
+        1,
+        4
+      ],
+      "posterior_confidence": 0.9431,
+      "reasoning": "Information-seeking route to (1, 4): P(EVE at cell)=94.3%, novelty=1.00, information_proxy=0.959, travel=3; adapt target after the next observation.",
+      "timestamp": 12,
+      "signal_direction": null
+    },
+    {
+      "step": 14,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        2,
+        5
+      ],
+      "battery_remaining": 48,
+      "signal_strength": 4.446,
+      "belief_entropy": 0.4818,
+      "inferred_location": [
+        6,
+        4
+      ],
+      "posterior_confidence": 0.9113,
+      "reasoning": "Information-seeking route to (6, 4): P(EVE at cell)=91.1%, novelty=1.00, information_proxy=0.996, travel=5; adapt target after the next observation.",
+      "timestamp": 13,
+      "signal_direction": null
+    },
+    {
+      "step": 15,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        3,
+        5
+      ],
+      "battery_remaining": 44,
+      "signal_strength": 7.488,
+      "belief_entropy": 0.4497,
+      "inferred_location": [
+        6,
+        4
+      ],
+      "posterior_confidence": 0.9116,
+      "reasoning": "Information-seeking route to (6, 4): P(EVE at cell)=91.2%, novelty=1.00, information_proxy=0.996, travel=4; adapt target after the next observation.",
+      "timestamp": 14,
+      "signal_direction": null
+    },
+    {
+      "step": 16,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        4,
+        5
+      ],
+      "battery_remaining": 40,
+      "signal_strength": 7.297,
+      "belief_entropy": 0.4019,
+      "inferred_location": [
+        6,
+        4
+      ],
+      "posterior_confidence": 0.9379,
+      "reasoning": "Information-seeking route to (6, 4): P(EVE at cell)=93.8%, novelty=1.00, information_proxy=0.994, travel=3; adapt target after the next observation.",
+      "timestamp": 15,
+      "signal_direction": null
+    },
+    {
+      "step": 17,
+      "action": "MOVE_SOUTH",
+      "agent_pos": [
+        5,
+        5
+      ],
+      "battery_remaining": 36,
+      "signal_strength": 7.303,
+      "belief_entropy": 1.4111,
+      "inferred_location": [
+        7,
+        4
+      ],
+      "posterior_confidence": 0.5115,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((5, 4)) before committing to a noisy early estimate.",
+      "timestamp": 16,
+      "signal_direction": null
+    },
+    {
+      "step": 18,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        5,
+        4
+      ],
+      "battery_remaining": 32,
+      "signal_strength": 6.727,
+      "belief_entropy": 1.0576,
+      "inferred_location": [
+        1,
+        3
+      ],
+      "posterior_confidence": 0.5642,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((6, 4)) before committing to a noisy early estimate.",
+      "timestamp": 17,
+      "signal_direction": null
+    },
+    {
+      "step": 19,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        6,
+        4
+      ],
+      "battery_remaining": 28,
+      "signal_strength": 11.771,
+      "belief_entropy": 0.7164,
+      "inferred_location": [
+        7,
+        2
+      ],
+      "posterior_confidence": 0.8589,
+      "reasoning": "Information-seeking route to (7, 2): P(EVE at cell)=85.9%, novelty=1.00, information_proxy=0.858, travel=3; adapt target after the next observation.",
+      "timestamp": 18,
+      "signal_direction": null
+    },
+    {
+      "step": 20,
+      "action": "MOVE_WEST",
+      "agent_pos": [
+        7,
+        4
+      ],
+      "battery_remaining": 24,
+      "signal_strength": 7.544,
+      "belief_entropy": 0.2911,
+      "inferred_location": [
+        6,
+        7
+      ],
+      "posterior_confidence": 0.9599,
+      "reasoning": "Information-seeking route to (6, 7): P(EVE at cell)=96.0%, novelty=1.00, information_proxy=0.979, travel=4; adapt target after the next observation.",
+      "timestamp": 19,
+      "signal_direction": null
+    },
+    {
+      "step": 21,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        6,
+        4
+      ],
+      "battery_remaining": 20,
+      "signal_strength": 7.719,
+      "belief_entropy": 0.1545,
+      "inferred_location": [
+        6,
+        7
+      ],
+      "posterior_confidence": 0.9786,
+      "reasoning": "Information-seeking route to (6, 7): P(EVE at cell)=97.9%, novelty=1.00, information_proxy=0.987, travel=3; adapt target after the next observation.",
+      "timestamp": 20,
+      "signal_direction": null
+    },
+    {
+      "step": 22,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        6,
+        5
+      ],
+      "battery_remaining": 16,
+      "signal_strength": 8.382,
+      "belief_entropy": 1.2272,
+      "inferred_location": [
+        6,
+        7
+      ],
+      "posterior_confidence": 0.5881,
+      "reasoning": "Exploration phase: sample nearby unvisited cell toward the search area centre ((6, 6)) before committing to a noisy early estimate.",
+      "timestamp": 21,
+      "signal_direction": null
+    },
+    {
+      "step": 23,
+      "action": "RECHARGE",
+      "agent_pos": [
+        6,
+        6
+      ],
+      "battery_remaining": 12,
+      "signal_strength": 15.342,
+      "belief_entropy": 0.0051,
+      "inferred_location": [
+        5,
+        7
+      ],
+      "posterior_confidence": 0.9996,
+      "reasoning": "Reserve policy: battery=12; recharge before committing to another route.",
+      "timestamp": 22,
+      "signal_direction": null
+    },
+    {
+      "step": 24,
+      "action": "SCAN",
+      "agent_pos": [
+        6,
+        6
+      ],
+      "battery_remaining": 37,
+      "signal_strength": 14.811,
+      "belief_entropy": 0.2841,
+      "inferred_location": [
+        5,
+        7
+      ],
+      "posterior_confidence": 0.9532,
+      "reasoning": "Evidence collection: scanning newly discovered COMM_PING at (6, 6) for a higher-quality reading.",
+      "timestamp": 23,
+      "signal_direction": null
+    },
+    {
+      "step": 25,
+      "action": "MOVE_WEST",
+      "agent_pos": [
+        6,
+        6
+      ],
+      "battery_remaining": 29,
+      "signal_strength": 13.01,
+      "belief_entropy": 1.5314,
+      "inferred_location": [
+        5,
+        8
+      ],
+      "posterior_confidence": 0.5154,
+      "reasoning": "Information-seeking route to (5, 8): P(EVE at cell)=51.5%, novelty=1.00, information_proxy=0.793, travel=3; adapt target after the next observation.",
+      "timestamp": 24,
+      "signal_direction": null
+    },
+    {
+      "step": 26,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        5,
+        6
+      ],
+      "battery_remaining": 25,
+      "signal_strength": 12.902,
+      "belief_entropy": 0.8252,
+      "inferred_location": [
+        5,
+        8
+      ],
+      "posterior_confidence": 0.7443,
+      "reasoning": "Information-seeking route to (5, 8): P(EVE at cell)=74.4%, novelty=1.00, information_proxy=0.998, travel=2; adapt target after the next observation.",
+      "timestamp": 25,
+      "signal_direction": null
+    },
+    {
+      "step": 27,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        5,
+        7
+      ],
+      "battery_remaining": 21,
+      "signal_strength": 12.745,
+      "belief_entropy": 0.9965,
+      "inferred_location": [
+        6,
+        8
+      ],
+      "posterior_confidence": 0.5347,
+      "reasoning": "Information-seeking route to (6, 8): P(EVE at cell)=53.5%, novelty=1.00, information_proxy=0.534, travel=2; adapt target after the next observation.",
+      "timestamp": 26,
+      "signal_direction": null
+    },
+    {
+      "step": 28,
+      "action": "MOVE_EAST",
+      "agent_pos": [
+        6,
+        7
+      ],
+      "battery_remaining": 17,
+      "signal_strength": 21.022,
+      "belief_entropy": 0.876,
+      "inferred_location": [
+        7,
+        8
+      ],
+      "posterior_confidence": 0.7644,
+      "reasoning": "Information-seeking route to (7, 8): P(EVE at cell)=76.4%, novelty=1.00, information_proxy=0.981, travel=2; adapt target after the next observation.",
+      "timestamp": 27,
+      "signal_direction": null
+    },
+    {
+      "step": 29,
+      "action": "MOVE_NORTH",
+      "agent_pos": [
+        7,
+        7
+      ],
+      "battery_remaining": 13,
+      "signal_strength": 31.44,
+      "belief_entropy": 0.0,
+      "inferred_location": [
+        7,
+        8
+      ],
+      "posterior_confidence": 1.0,
+      "reasoning": "Information-seeking route to (7, 8): P(EVE at cell)=100.0%, novelty=1.00, information_proxy=0.000, travel=1; adapt target after the next observation.",
+      "timestamp": 28,
+      "signal_direction": null
+    }
+  ],
+  "final_report": {
+    "mission_id": "MISSION-SECTOR-7A",
+    "status": "SUCCESS",
+    "termination_reason": "EVE_FOUND",
+    "total_steps": 29,
+    "final_battery": 9,
+    "inferred_location": [
+      7,
+      8
+    ],
+    "posterior_confidence": 1.0,
+    "final_entropy_bits": 0.0,
+    "evidence_log": [
+      {
+        "position": [
+          6,
+          6
+        ],
+        "type": "COMM_PING",
+        "directional_bias": [
+          0,
+          1
+        ],
+        "message": "Localized communication ping detected nearby."
+      }
+    ],
+    "recommended_next_step": "Verify EVE's signal and establish communication."
+  }
+}

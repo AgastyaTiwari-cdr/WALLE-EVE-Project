@@ -1,0 +1,91 @@
+{
+  "mission_id": "MISSION-SECTOR-7A",
+  "random_seed": 7,
+  "initial_signal_reading": {
+    "position": [
+      0,
+      0
+    ],
+    "direction": [
+      1,
+      1
+    ],
+    "strength": 1.2,
+    "timestamp": 0
+  },
+  "environment": {
+    "grid_shape": [
+      10,
+      10
+    ],
+    "true_eve_position": [
+      7,
+      8
+    ],
+    "signal_decay_factor": 120.0,
+    "sensor_noise_sigma": 1.5,
+    "sensor_model": {
+      "dropout_probability": 0.02,
+      "outlier_probability": 0.04,
+      "outlier_scale": 3.0,
+      "bias": 0.0
+    }
+  },
+  "agent_initial_state": {
+    "start_position": [
+      0,
+      0
+    ],
+    "battery_capacity": 100,
+    "max_step_budget": 50
+  },
+  "action_costs": {
+    "MOVE": 4,
+    "SCAN": 8,
+    "RECHARGE": 25
+  },
+  "clues": [
+    {
+      "position": [
+        3,
+        3
+      ],
+      "type": "ION_TRAIL",
+      "directional_bias": [
+        1,
+        1
+      ],
+      "message": "High-density energy ion vector pointing Northeast."
+    },
+    {
+      "position": [
+        6,
+        6
+      ],
+      "type": "COMM_PING",
+      "directional_bias": [
+        0,
+        1
+      ],
+      "message": "Localized communication ping detected nearby."
+    }
+  ],
+  "decoys": [
+    {
+      "position": [
+        3,
+        3
+      ],
+      "signal_decay_factor": 28.0,
+      "label": "SPOOFED_SIGNAL_ALPHA"
+    },
+    {
+      "position": [
+        8,
+        2
+      ],
+      "signal_decay_factor": 22.0,
+      "label": "SPOOFED_SIGNAL_BETA"
+    }
+  ]
+}
